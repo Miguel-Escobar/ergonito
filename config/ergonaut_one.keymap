@@ -57,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp HASH  &kp J            &kp G            &kp M         &kp P          &kp V            &kp SEMI      &kp DOT             &kp FSLH       &kp DOUBLE_QUOTES  &kp APOS          &kp RIGHT_PARENTHESIS
-&kp Q     &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B            &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &kp LEFT_PARENTHESIS
-&kp Z     &kp X            &kp F            &kp L         &kp C          &kp W            &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &to 5
-                                            &htl 3 TAB    &htl 2 T       &htl 4 ESCAPE    &htl 1 ENTER  &kp SPACE           &kp BACKSPACE
+&kp HASH  &kp J            &kp G            &kp M         &kp P          &kp V          &kp SEMI      &kp DOT             &kp FSLH       &kp DOUBLE_QUOTES  &kp APOS          &kp RIGHT_PARENTHESIS
+&kp Q     &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B          &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &kp CAPSLOCK
+&kp Z     &kp X            &kp F            &kp L         &kp C          &kp W          &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &to 5
+                                            &htl 3 TAB    &htl 2 T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE           &kp BACKSPACE
             >;
 
             label = "Base";
@@ -74,10 +74,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8   &kp N9  &kp ASTERISK    &trans  &trans          &trans            &trans        &trans        &trans
-&kp EQUAL         &kp SEMICOLON      &kp N4  &kp N5   &kp N6  &kp PLUS        &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&kp UNDERSCORE    &kp CARET          &kp N1  &kp N2   &kp N3  &kp SLASH       &trans  &trans          &trans            &trans        &trans        &trans
-                                             &kp DOT  &kp N0  &kp MINUS       &trans  &trans          &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8     &kp N9  &kp ASTERISK  &trans  &trans          &trans            &trans        &trans        &trans
+&kp EQUAL         &kp SEMICOLON      &kp N4  &kp N5     &kp N6  &kp PLUS      &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&kp UNDERSCORE    &kp CARET          &kp N1  &kp N2     &kp N3  &kp DOT       &trans  &trans          &trans            &trans        &trans        &trans
+                                             &kp SLASH  &kp N0  &kp MINUS     &trans  &trans          &trans
             >;
 
             label = "num";
@@ -85,10 +85,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT      &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &trans
-&trans  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH     &kp PIPE       &kp COLON      &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &trans
-&trans  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp GRAVE    &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
-                                                        &trans            &trans             &trans       &trans         &trans         &trans
+&trans  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &trans
+&trans  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH   &kp PIPE       &kp COLON      &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &trans
+&trans  &kp CARET                  &kp SLASH            &kp ASTERISK      &kp BACKSLASH      &kp GRAVE  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
+                                                        &trans            &trans             &trans     &trans         &trans         &trans
             >;
 
             label = "sym";
@@ -96,10 +96,10 @@
 
         Function {
             bindings = <
-&studio_unlock  &kp F9  &kp F10  &kp F11  &kp F12  &kp PRINTSCREEN    &kp C_VOLUME_UP    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
-&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp PAUSE_BREAK    &kp C_VOLUME_DOWN  &kp RIGHT_SHIFT       &kp RIGHT_CONTROL     &kp LEFT_ALT  &kp RIGHT_GUI  &trans
-&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp SCROLLLOCK     &kp K_MUTE         &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans        &trans         &bt BT_CLR
-                                 &trans   &trans   &trans             &trans             &trans                &trans
+&sys_reset  &kp F9  &kp F10  &kp F11  &kp F12  &kp PRINTSCREEN  &kp C_VOLUME_UP    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
+&trans      &kp F5  &kp F6   &kp F7   &kp F8   &kp PAUSE_BREAK  &kp C_VOLUME_DOWN  &kp RIGHT_SHIFT       &kp RIGHT_CONTROL     &kp LEFT_ALT  &kp RIGHT_GUI  &trans
+&trans      &kp F1  &kp F2   &kp F3   &kp F4   &kp SCROLLLOCK   &kp K_MUTE         &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans        &trans         &bt BT_CLR
+                             &trans   &trans   &trans           &trans             &trans                &trans
             >;
 
             label = "fun";
@@ -107,10 +107,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans     &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
-                                    &trans            &trans          &none     &mkp LCLK  &mkp RCLK       &mkp MB3
+&trans  &trans        &trans        &trans            &trans          &trans  &trans     &trans     &trans         &trans       &trans     &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans     &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans  &trans        &trans        &trans            &trans          &trans  &trans     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+                                    &trans            &trans          &none   &mkp LCLK  &mkp RCLK  &mkp MB3
             >;
 
             label = "nav";
@@ -118,10 +118,10 @@
 
         gametest {
             bindings = <
-&kp ESCAPE  &kp J  &kp G  &kp M  &kp P  &kp V        &kp SEMI   &kp DOT  &kp FSLH  &kp DQT  &kp SQT  &kp LS(RPAR)
-&kp Q       &kp R  &kp S  &kp N  &kp D  &kp B        &kp COMMA  &kp A    &kp E     &kp I    &kp H    &kp LS(LPAR)
-&kp Z       &kp X  &kp F  &kp L  &kp C  &kp W        &kp MINUS  &kp U    &kp O     &kp Y    &kp K    &to 0
-                          &sl 6  &kp T  &kp SPACE    &trans     &trans   &trans
+&kp ESCAPE  &kp J  &kp G  &kp M  &kp P  &kp V      &kp SEMI   &kp DOT  &kp FSLH  &kp DQT  &kp SQT  &kp LS(RPAR)
+&kp Q       &kp R  &kp S  &kp N  &kp D  &kp B      &kp COMMA  &kp A    &kp E     &kp I    &kp H    &kp LS(LPAR)
+&kp Z       &kp X  &kp F  &kp L  &kp C  &kp W      &kp MINUS  &kp U    &kp O     &kp Y    &kp K    &to 0
+                          &sl 6  &kp T  &kp SPACE  &trans     &trans   &trans
             >;
 
             label = "Game";
@@ -129,10 +129,10 @@
 
         gamenum {
             bindings = <
-&trans  &kp N5  &kp N6  &kp N7  &kp N8  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp N5  &kp N6  &kp N7  &kp N8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "GameNum";
