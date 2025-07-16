@@ -59,7 +59,7 @@
             bindings = <
 &kp HASH  &kp J            &kp G            &kp M         &kp P          &kp V          &kp SEMI      &kp DOT             &kp FSLH       &kp DOUBLE_QUOTES  &kp APOS          &kp RIGHT_PARENTHESIS
 &kp Q     &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B          &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &kp CAPSLOCK
-&kp Z     &kp X            &kp F            &kp L         &kp C          &kp W          &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &to 5
+&kp Z     &kp X            &kp F            &kp L         &kp C          &kp W          &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &trans
                                             &htl 3 TAB    &htl 2 T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE           &kp BACKSPACE
             >;
 
@@ -114,28 +114,6 @@
             >;
 
             label = "nav";
-        };
-
-        gametest {
-            bindings = <
-&kp ESCAPE  &kp J  &kp G  &kp M  &kp P  &kp V      &kp SEMI   &kp DOT  &kp FSLH  &kp DQT  &kp SQT  &kp LS(RPAR)
-&kp Q       &kp R  &kp S  &kp N  &kp D  &kp B      &kp COMMA  &kp A    &kp E     &kp I    &kp H    &kp LS(LPAR)
-&kp Z       &kp X  &kp F  &kp L  &kp C  &kp W      &kp MINUS  &kp U    &kp O     &kp Y    &kp K    &to 0
-                          &sl 6  &kp T  &kp SPACE  &trans     &trans   &trans
-            >;
-
-            label = "Game";
-        };
-
-        gamenum {
-            bindings = <
-&trans  &kp N5  &kp N6  &kp N7  &kp N8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "GameNum";
         };
     };
 };
