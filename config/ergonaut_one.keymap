@@ -47,7 +47,7 @@
 
             bindings = <
 &kp HASH  &kp J            &kp G            &kp M         &kp P          &kp V          &kp SEMI      &kp DOT             &kp FSLH       &kp DOUBLE_QUOTES  &kp APOS          &kp RIGHT_PARENTHESIS
-&kp Q     &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B          &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &es_n_tilde
+&kp Q     &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B          &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &trans
 &kp Z     &kp X            &kp F            &kp L         &kp C          &kp W          &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &trans
                                             &htl 3 TAB    &htl 2 T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE           &kp BACKSPACE
             >;
