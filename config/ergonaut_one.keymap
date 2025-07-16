@@ -7,9 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#define HOST_OS 2
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/unicode-chars/spanish.dtsi"
 
 / {
     behaviors {
@@ -35,40 +32,6 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        caps {
-            bindings = <&kp CAPS>;
-            key-positions = <21 22>;
-        };
-
-        a_tilde {
-            bindings = <&es_a_acute>;
-            key-positions = <37 19>;
-        };
-
-        e_tilde {
-            bindings = <&es_e_acute>;
-            key-positions = <37 20>;
-        };
-
-        i_tilde {
-            bindings = <&es_i_acute>;
-            key-positions = <37 21>;
-        };
-
-        o_tilde {
-            bindings = <&es_o_acute>;
-            key-positions = <37 32>;
-        };
-
-        u_tilde {
-            bindings = <&es_u_acute>;
-            key-positions = <37 31>;
         };
     };
 
