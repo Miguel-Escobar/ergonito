@@ -48,27 +48,27 @@
         };
 
         a_tilde {
-            bindings = <&kp A>;
+            bindings = <&es_a_acute>;
             key-positions = <37 19>;
         };
 
         e_tilde {
-            bindings = <&kp E>;
+            bindings = <&es_e_acute>;
             key-positions = <37 20>;
         };
 
         i_tilde {
-            bindings = <&kp I>;
+            bindings = <&es_i_acute>;
             key-positions = <37 21>;
         };
 
         o_tilde {
-            bindings = <&kp O>;
+            bindings = <&es_o_acute>;
             key-positions = <37 32>;
         };
 
         u_tilde {
-            bindings = <&kp U>;
+            bindings = <&es_u_acute>;
             key-positions = <37 31>;
         };
     };
