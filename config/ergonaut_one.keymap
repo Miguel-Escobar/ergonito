@@ -114,7 +114,7 @@
             bindings = <
 &trans  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &trans
 &trans  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH   &kp PIPE       &kp COLON      &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &trans
-&trans  &kp CARET                  &kp SLASH            &kp BACKSLASH     &kp ASTERISK       &kp GRAVE  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
+&trans  &kp CARET                  &kp SLASH            &kp BACKSLASH     &kp ASTERISK       &kp GRAVE  &kp TILDE2     &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
                                                         &trans            &trans             &trans     &trans         &trans         &trans
             >;
 
@@ -123,10 +123,10 @@
 
         Function {
             bindings = <
-&trans       &kp F9  &kp F10  &kp F11  &kp F12  &kp PRINTSCREEN  &kp C_VOLUME_UP    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
-&bootloader  &kp F5  &kp F6   &kp F7   &kp F8   &kp PAUSE_BREAK  &kp C_VOLUME_DOWN  &kp RIGHT_SHIFT       &kp RIGHT_CONTROL     &kp LEFT_ALT  &kp RIGHT_GUI  &bootloader
-&trans       &kp F1  &kp F2   &kp F3   &kp F4   &kp SCROLLLOCK   &kp K_MUTE         &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans        &trans         &bt BT_CLR
-                              &trans   &trans   &trans           &trans             &trans                &trans
+&trans       &bt BT_SEL 3      &bt BT_SEL 2  &bt BT_SEL 1          &bt BT_SEL 0          &kp C_VOLUME_UP  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&bootloader  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL      &kp LEFT_SHIFT        &kp C_VOL_DN     &trans  &kp F5  &kp F6   &kp F7   &kp F8   &bootloader
+&bt BT_CLR   &trans            &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_MUTE       &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                             &trans                &trans                &trans           &trans  &trans  &trans
             >;
 
             label = "fun";
@@ -134,8 +134,8 @@
 
         Navigation {
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans  &trans  &trans    &trans         &trans       &trans     &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp H     &kp J          &kp K        &kp L      &trans
 &trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
                                     &trans            &trans          &none   &trans  &trans    &trans
             >;
