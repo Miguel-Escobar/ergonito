@@ -65,9 +65,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp J            &kp G            &kp M         &kp P          &kp V          &kp SEMI      &kp DOT             &kp FSLH       &kp DOUBLE_QUOTES  &kp APOS          &kp RIGHT_PARENTHESIS
-&kp Q   &hrm LEFT_GUI R  &hrm LEFT_ALT S  &hrm LCTRL N  &hrm LSHIFT D  &kp B          &kp COMMA     &hrm RIGHT_SHIFT A  &hrm RCTRL E   &hrm RIGHT_ALT I   &hrm RIGHT_GUI H  &trans
-&kp Z   &kp X            &kp F            &kp L         &kp C          &kp W          &kp MINUS     &kp U               &kp O          &kp Y              &kp K             &trans
+&trans  &kp ES_J            &kp ES_G            &kp ES_M         &kp ES_P          &kp ES_V          &kp ES_SEMI      &kp ES_DOT             &kp ES_SLASH       &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE          &kp ES_RIGHT_PARENTHESIS
+&kp ES_Q   &hrm LEFT_GUI ES_R  &hrm LEFT_ALT ES_S  &hrm LCTRL ES_N  &hrm LSHIFT ES_D  &kp ES_B          &kp ES_COMMA     &hrm RIGHT_SHIFT ES_A  &hrm RCTRL ES_E   &hrm RIGHT_ALT ES_I   &hrm RIGHT_GUI ES_H  &kp ES_N_TILDE
+&kp ES_Z   &kp ES_X            &kp ES_F            &kp ES_L         &kp ES_C          &kp ES_W          &kp ES_MINUS     &kp ES_U               &kp ES_O          &kp ES_Y              &kp ES_K             &trans
                                           &htl 3 TAB    &htl 2 T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE           &kp BACKSPACE
             >;
 
@@ -82,10 +82,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8     &kp N9  &kp ASTERISK  &trans  &trans          &trans            &trans        &trans        &trans
-&kp EQUAL         &kp SEMICOLON      &kp N4  &kp N5     &kp N6  &kp PLUS      &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&kp UNDERSCORE    &kp CARET          &kp N1  &kp N2     &kp N3  &kp DOT       &trans  &trans          &trans            &trans        &trans        &trans
-                                             &kp SLASH  &kp N0  &kp MINUS     &trans  &trans          &trans
+&kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_N7  &kp ES_N8     &kp ES_N9  &kp ES_ASTERISK  &trans  &trans          &trans            &trans        &trans        &trans
+&kp ES_EQUAL         &kp ES_SEMICOLON      &kp ES_N4  &kp ES_N5     &kp ES_N6  &kp ES_PLUS      &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&kp ES_UNDERSCORE    &kp ES_CARET          &kp ES_N1  &kp ES_N2     &kp ES_N3  &kp ES_DOT       &trans  &trans          &trans            &trans        &trans        &trans
+                                             &kp ES_SLASH  &kp ES_N0  &kp ES_MINUS     &trans  &trans          &trans
             >;
 
             label = "num";
@@ -93,9 +93,9 @@
 
         Symbol {
             bindings = <
-&trans  &kp SQT                    &kp LESS_THAN        &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                 &kp PERCENT              &trans
-&trans  &hrm LEFT_GUI EXCLAMATION  &hrm LEFT_ALT MINUS  &hrm LCTRL PLUS   &hrm LSHFT EQUAL   &kp HASH   &kp PIPE       &kp COLON      &hrm RIGHT_CONTROL LEFT_PARENTHESIS  &hrm RIGHT_ALT RIGHT_PARENTHESIS  &hrm RIGHT_GUI QUESTION  &trans
-&trans  &kp CARET                  &kp SLASH            &kp BACKSLASH     &kp ASTERISK       &kp GRAVE  &kp TILDE2     &kp DOLLAR     &kp LEFT_BRACE                       &kp RIGHT_BRACE                   &kp AT                   &trans
+&trans  &kp ES_SINGLE_QUOTE                   &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT              &trans
+&kp ES_INVERTED_EXCLAMATION  &hrm LEFT_GUI ES_EXCLAMATION  &hrm LEFT_ALT ES_MINUS  &hrm LCTRL ES_PLUS   &hrm LSHFT ES_EQUAL   &kp ES_HASH   &kp ES_PIPE       &kp ES_COLON      &hrm RIGHT_CONTROL ES_LEFT_PARENTHESIS  &hrm RIGHT_ALT ES_RIGHT_PARENTHESIS  &hrm RIGHT_GUI ES_INVERTED_QUESTION  &kp ES_QUESTION
+&trans  &kp ES_CARET                  &kp ES_SLASH            &kp ES_BACKSLASH     &kp ES_ASTERISK       &kp ES_GRAVE  &kp ES_TILDE     &kp ES_DOLLAR     &kp ES_LEFT_BRACE                       &kp ES_RIGHT_BRACE                   &kp ES_AT                   &trans
                                                         &trans            &trans             &trans     &trans         &trans         &trans
             >;
 
@@ -116,7 +116,7 @@
         Navigation {
             bindings = <
 &trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp H     &kp J          &kp K        &kp L      &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp ES_H     &kp ES_J          &kp ES_K        &kp ES_L      &trans
 &trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
                                     &trans            &trans          &none   &trans  &trans    &trans
             >;
