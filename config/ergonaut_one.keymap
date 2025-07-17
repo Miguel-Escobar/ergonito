@@ -45,27 +45,27 @@
         };
 
         e_tilde {
-            bindings = <&none>;
+            bindings = <&e_tilde>;
             key-positions = <37 20>;
         };
 
         i_tilde {
-            bindings = <&none>;
+            bindings = <&i_tilde>;
             key-positions = <37 21>;
         };
 
         o_tilde {
-            bindings = <&none>;
+            bindings = <&o_tilde>;
             key-positions = <37 32>;
         };
 
         u_tilde {
-            bindings = <&none>;
+            bindings = <&u_tilde>;
             key-positions = <37 31>;
         };
 
         u_dos_puntos {
-            bindings = <&none>;
+            bindings = <&u_dos_puntos>;
             key-positions = <37 31 32>;
         };
 
@@ -79,8 +79,43 @@
         a_tilde: a_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp A>;
+            bindings = <&kp ES_ACUTE &kp ES_A>;
             label = "A_TILDE";
+        };
+
+        e_tilde: e_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ES_ACUTE &kp ES_E>;
+            label = "E_TILDE";
+        };
+
+        i_tilde: i_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ES_ACUTE &kp ES_I>;
+            label = "I_TILDE";
+        };
+
+        o_tilde: o_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ES_ACUTE &kp ES_O>;
+            label = "O_TILDE";
+        };
+
+        u_tilde: u_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ES_ACUTE &kp ES_U>;
+            label = "U_TILDE";
+        };
+
+        u_dos_puntos: u_dos_puntos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ES_UMLAUT &kp ES_U>;
+            label = "U_DOS_PUNTOS";
         };
     };
 
@@ -88,34 +123,24 @@
         compatible = "zmk,keymap";
 
         Base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans    &kp ES_J            &kp ES_G            &kp ES_M         &kp ES_P          &kp ES_V       &kp ES_SEMI   &kp ES_DOT             &kp ES_SLASH     &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE  &kp ES_RIGHT_PARENTHESIS
-&kp ES_Q  &hrm LEFT_GUI ES_R  &hrm LEFT_ALT ES_S  &hrm LCTRL ES_N  &hrm LSHIFT ES_D  &kp ES_B       &kp ES_COMMA  &hrm RIGHT_SHIFT ES_A  &hrm RCTRL ES_E  &hrm RIGHT_ALT ES_I   &hrm RIGHT_GUI ES_H  &kp ES_N_TILDE
-&kp ES_Z  &kp ES_X            &kp ES_F            &kp ES_L         &kp ES_C          &kp ES_W       &kp ES_MINUS  &kp ES_U               &kp ES_O         &kp ES_Y              &kp ES_K             &trans
-                                                  &htl 3 TAB       &htl 2 T          &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE              &kp BACKSPACE
+&kp ES_HASH  &kp ES_J            &kp ES_G            &kp ES_M         &kp ES_P          &kp ES_V       &kp ES_SEMI   &kp ES_DOT             &kp ES_SLASH     &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE  &kp ES_RIGHT_PARENTHESIS
+&kp ES_Q     &hrm LEFT_GUI ES_R  &hrm LEFT_ALT ES_S  &hrm LCTRL ES_N  &hrm LSHIFT ES_D  &kp ES_B       &kp ES_COMMA  &hrm RIGHT_SHIFT ES_A  &hrm RCTRL ES_E  &hrm RIGHT_ALT ES_I   &hrm RIGHT_GUI ES_H  &kp ES_N_TILDE
+&kp ES_Z     &kp ES_X            &kp ES_F            &kp ES_L         &kp ES_C          &kp ES_W       &kp ES_MINUS  &kp ES_U               &kp ES_O         &kp ES_Y              &kp ES_K             &kp LEFT_SHIFT
+                                                     &htl 3 TAB       &htl 2 ES_T       &htl 4 ESCAPE  &htl 1 ENTER  &kp SPACE              &kp BACKSPACE
             >;
 
             label = "Base";
         };
 
         Number {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_N7  &kp ES_N8     &kp ES_N9  &kp ES_ASTERISK  &trans  &trans          &trans            &trans        &trans        &trans
-&kp ES_EQUAL         &kp ES_SEMICOLON      &kp ES_N4  &kp ES_N5     &kp ES_N6  &kp ES_PLUS      &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&kp ES_UNDERSCORE    &kp ES_CARET          &kp ES_N1  &kp ES_N2     &kp ES_N3  &kp ES_DOT       &trans  &trans          &trans            &trans        &trans        &trans
-                                                      &kp ES_SLASH  &kp ES_N0  &kp ES_MINUS     &trans  &trans          &trans
+&kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_N7  &kp ES_N8     &kp ES_N9  &kp ES_ASTERISK  &trans      &kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_CARET     &kp ES_EQUAL  &trans
+&kp ES_EQUAL         &kp ES_SEMICOLON      &kp ES_N4  &kp ES_N5     &kp ES_N6  &kp ES_PLUS      &kp ES_DOT  &kp LEFT_SHIFT       &kp LEFT_CONTROL      &kp LEFT_ALT     &kp LEFT_GUI  &trans
+&kp ES_UNDERSCORE    &kp ES_CARET          &kp ES_N1  &kp ES_N2     &kp ES_N3  &kp ES_DOT       &trans      &kp ES_PLUS          &kp ES_MINUS          &kp ES_ASTERISK  &kp ES_SLASH  &trans
+                                                      &kp ES_SLASH  &kp ES_N0  &kp ES_MINUS     &trans      &trans               &trans
             >;
 
             label = "num";
@@ -123,7 +148,7 @@
 
         Symbol {
             bindings = <
-&trans                       &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT                       &trans
+&kp ES_DEGREE                &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT                   &trans
 &kp ES_INVERTED_EXCLAMATION  &hrm LEFT_GUI ES_EXCLAMATION  &hrm LEFT_ALT ES_MINUS  &hrm LCTRL ES_PLUS   &hrm LSHFT ES_EQUAL   &kp ES_HASH   &kp ES_PIPE       &kp ES_COLON      &hrm RIGHT_CONTROL ES_LEFT_PARENTHESIS  &hrm RIGHT_ALT ES_RIGHT_PARENTHESIS  &hrm RIGHT_GUI ES_INVERTED_QUESTION  &kp ES_QUESTION
 &trans                       &kp ES_CARET                  &kp ES_SLASH            &kp ES_BACKSLASH     &kp ES_ASTERISK       &kp ES_GRAVE  &kp ES_TILDE      &kp ES_DOLLAR     &kp ES_LEFT_BRACE                       &kp ES_RIGHT_BRACE                   &kp ES_AT                            &trans
                                                                                    &trans               &trans                &trans        &trans            &trans            &trans
