@@ -148,7 +148,7 @@
 
         Symbol {
             bindings = <
-&kp ES_DEGREE                &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT                   &trans
+&kp ES_DEGREE                &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT            &trans
 &kp ES_INVERTED_EXCLAMATION  &hrm LEFT_GUI ES_EXCLAMATION  &hrm LEFT_ALT ES_MINUS  &hrm LCTRL ES_PLUS   &hrm LSHFT ES_EQUAL   &kp ES_HASH   &kp ES_PIPE       &kp ES_COLON      &hrm RIGHT_CONTROL ES_LEFT_PARENTHESIS  &hrm RIGHT_ALT ES_RIGHT_PARENTHESIS  &hrm RIGHT_GUI ES_INVERTED_QUESTION  &kp ES_QUESTION
 &trans                       &kp ES_CARET                  &kp ES_SLASH            &kp ES_BACKSLASH     &kp ES_ASTERISK       &kp ES_GRAVE  &kp ES_TILDE      &kp ES_DOLLAR     &kp ES_LEFT_BRACE                       &kp ES_RIGHT_BRACE                   &kp ES_AT                            &trans
                                                                                    &trans               &trans                &trans        &trans            &trans            &trans
