@@ -123,7 +123,6 @@
         compatible = "zmk,keymap";
 
         Base {
-
             bindings = <
 &kp ES_HASH  &kp ES_J            &kp ES_G            &kp ES_M         &kp ES_P          &kp ES_V       &kp ES_SEMI   &kp ES_DOT             &kp ES_SLASH     &kp ES_DOUBLE_QUOTES  &kp ES_SINGLE_QUOTE  &kp ES_RIGHT_PARENTHESIS
 &kp ES_Q     &hrm LEFT_GUI ES_R  &hrm LEFT_ALT ES_S  &hrm LCTRL ES_N  &hrm LSHIFT ES_D  &kp ES_B       &kp ES_COMMA  &hrm RIGHT_SHIFT ES_A  &hrm RCTRL ES_E  &hrm RIGHT_ALT ES_I   &hrm RIGHT_GUI ES_H  &kp ES_N_TILDE
@@ -135,7 +134,6 @@
         };
 
         Number {
-
             bindings = <
 &kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_N7  &kp ES_N8     &kp ES_N9  &kp ES_ASTERISK  &trans      &kp ES_LEFT_BRACKET  &kp ES_RIGHT_BRACKET  &kp ES_CARET     &kp ES_EQUAL  &trans
 &kp ES_EQUAL         &kp ES_SEMICOLON      &kp ES_N4  &kp ES_N5     &kp ES_N6  &kp ES_PLUS      &kp ES_DOT  &kp LEFT_SHIFT       &kp LEFT_CONTROL      &kp LEFT_ALT     &kp LEFT_GUI  &trans
@@ -148,7 +146,7 @@
 
         Symbol {
             bindings = <
-&kp ES_DEGREE                &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT            &trans
+&kp ES_DEGREE                &kp ES_SINGLE_QUOTE           &kp ES_LESS_THAN        &kp ES_GREATER_THAN  &kp ES_DOUBLE_QUOTES  &kp ES_DOT    &kp ES_AMPERSAND  &kp ES_SEMICOLON  &kp ES_LEFT_BRACKET                     &kp ES_RIGHT_BRACKET                 &kp ES_PERCENT                       &trans
 &kp ES_INVERTED_EXCLAMATION  &hrm LEFT_GUI ES_EXCLAMATION  &hrm LEFT_ALT ES_MINUS  &hrm LCTRL ES_PLUS   &hrm LSHFT ES_EQUAL   &kp ES_HASH   &kp ES_PIPE       &kp ES_COLON      &hrm RIGHT_CONTROL ES_LEFT_PARENTHESIS  &hrm RIGHT_ALT ES_RIGHT_PARENTHESIS  &hrm RIGHT_GUI ES_INVERTED_QUESTION  &kp ES_QUESTION
 &trans                       &kp ES_CARET                  &kp ES_SLASH            &kp ES_BACKSLASH     &kp ES_ASTERISK       &kp ES_GRAVE  &kp ES_TILDE      &kp ES_DOLLAR     &kp ES_LEFT_BRACE                       &kp ES_RIGHT_BRACE                   &kp ES_AT                            &trans
                                                                                    &trans               &trans                &trans        &trans            &trans            &trans
@@ -170,8 +168,8 @@
 
         Navigation {
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp ES_H  &kp ES_J       &kp ES_K     &kp ES_L   &trans
+&trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp H     &kp J          &kp K        &kp L      &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
 &trans  &trans        &trans        &trans            &trans          &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
                                     &trans            &trans          &none   &trans  &trans    &trans
             >;
